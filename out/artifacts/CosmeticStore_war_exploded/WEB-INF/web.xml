@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>controller.store.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/store/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>controller.store.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/store/userLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchProduct</servlet-name>
+        <servlet-class>controller.store.SearchProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchProduct</servlet-name>
+        <url-pattern>/store/searchProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCart</servlet-name>
+        <servlet-class>controller.store.AddCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCart</servlet-name>
+        <url-pattern>/store/addCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClearCart</servlet-name>
+        <servlet-class>controller.store.ClearCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClearCart</servlet-name>
+        <url-pattern>/store/clearCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>controller.store.Cart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/store/cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>controller.store.LogOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/store/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SingleProduct</servlet-name>
+        <servlet-class>controller.store.SingleProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SingleProduct</servlet-name>
+        <url-pattern>/store/singleProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myPage</servlet-name>
+        <servlet-class>controller.store.MyPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myPage</servlet-name>
+        <url-pattern>/store/myPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateUser</servlet-name>
+        <servlet-class>controller.store.UpdateUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateUser</servlet-name>
+        <url-pattern>/store/updateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MultiProduct</servlet-name>
+        <servlet-class>controller.store.MultiProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MultiProduct</servlet-name>
+        <url-pattern>/store/multiProduct</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/store/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/store/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>fail</servlet-name>
+        <jsp-file>/store/fail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fail</servlet-name>
+        <url-pattern>/store/fail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterPage</servlet-name>
+        <jsp-file>/store/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterPage</servlet-name>
+        <url-pattern>/store/registerPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>controller.admin.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/admin/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminLoginPage</servlet-name>
+        <jsp-file>/admin/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginPage</servlet-name>
+        <url-pattern>/admin/loginPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageUser</servlet-name>
+        <servlet-class>controller.admin.ManageUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageUser</servlet-name>
+        <url-pattern>/admin/manageUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageOrder</servlet-name>
+        <servlet-class>controller.admin.ManageOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageOrder</servlet-name>
+        <url-pattern>/admin/manageOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyUser</servlet-name>
+        <servlet-class>controller.admin.ModifyUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyUser</servlet-name>
+        <url-pattern>/admin/modifyUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertProduct</servlet-name>
+        <servlet-class>controller.admin.InsertProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertProduct</servlet-name>
+        <url-pattern>/admin/insertProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertProductPage</servlet-name>
+        <jsp-file>/admin/insertProduct.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertProductPage</servlet-name>
+        <url-pattern>/admin/insertProductPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageProduct</servlet-name>
+        <servlet-class>controller.admin.ManageProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageProduct</servlet-name>
+        <url-pattern>/admin/manageProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyProduct</servlet-name>
+        <servlet-class>controller.admin.ModifyProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyProduct</servlet-name>
+        <url-pattern>/admin/modifyProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProduct</servlet-name>
+        <servlet-class>controller.admin.DeleteProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteProduct</servlet-name>
+        <url-pattern>/admin/deleteProduct</url-pattern>
+    </servlet-mapping>
+</web-app>
